@@ -1,0 +1,17 @@
+<template>
+    <lightning-card icon-name="standard:account" title="susbcribe LMS">
+        <lightning-button 
+        variant="brand"
+        label="Unsubscribe" 
+        oncclick={handleUnsubscribeClick} 
+      ></lightning-button>
+      <lightning-button 
+      
+        variant="base"
+        label="Subscribe" 
+        onclick={handleSubscribeClick}
+        ></lightning-button>
+        <p>message Captured: {messageCaptured}</p>
+    </lightning-card>
+    
+</template>

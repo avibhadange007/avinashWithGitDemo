@@ -1,0 +1,13 @@
+<template>
+    <lightning-card  variant="narrow"  title="Lightning data services" icon-name="standard:account">
+        <lightning-button variant="brand" label="load account data" title="titleName" onclick={handleClick}></lightning-button>
+        <template if:true={AcccountList}>
+            <lightning-datatable
+                key-field="Id"
+                data={AcccountList}
+                hide-checkbox-column
+                columns={accountColumns}
+                ></lightning-datatable>
+        </template>
+    </lightning-card>
+</template>

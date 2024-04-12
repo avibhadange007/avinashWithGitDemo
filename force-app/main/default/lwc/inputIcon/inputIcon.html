@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="LWC lightning input with icons">
+        <div class="slds-var-p-around_medium">
+            <div class="slds-is-relative">
+                <lightning-icon size="x-small" icon-name="utility:email"
+                alternative-text="email" title="email" class="input-icon icon-right"></lightning-icon>
+            <lightning-input type="text" label="email" class="icon-right"></lightning-input> 
+           </div>
+           <!--password field-->
+           <div class="slds-is-realtive">
+            <lightning-icon size="x-small" icon-name={passwordIcon}
+            alternative-text="email" title="Email" onclick={passwordHandler} class="input-icon icon-right"></lightning-icon>
+            <lightning-input type={passwordType} label="password" class="icon-right"></lightning-input>
+           
+            </div>
+        </div>
+    </lightning-card>
+</template>

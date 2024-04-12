@@ -1,0 +1,17 @@
+<template>
+    
+    <p>inside parent component</p>
+    =========================================================
+    <lightning-card  variant="Narrow"  title="parent Api component" icon-name="standard:account">
+     <c-child-a-pi-cmp message="message passs from paret to child" page-no="44" track-prop="this
+      is the track property"></c-child-a-pi-cmp>
+      <lightning-button variant="brand" label="invoke child data" title="titleName" onclick={handleEventCall}></lightning-button>
+      *******************************************
+      <p>after child is loaded</p>
+      <p>Name Data received :{dataReceivedFromChild}</P>
+        <p>Address data Received :{address}</P>
+            <p>City data Received:{city}</P>
+                <p>phone data received:{phone}</P> 
+
+     </lightning-card>
+</template>

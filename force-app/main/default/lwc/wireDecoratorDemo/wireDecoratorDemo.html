@@ -1,0 +1,33 @@
+<template>
+    <lightning-card variant="Narrow" title="Wire Decorator" icon-name="standard:account">
+        <!--<template for:each={cases.data} for:item="eachCase" 
+        for:index="index">
+        <p key={eachCase.Id}>{index} || {eachCase.Subject} || 
+        {eachCase.CaseNumber} || {eachCase.Origin}</p>
+        </template>
+
+        <template iterator:eachcase={cases.data}>
+        <li key={eachcase.value.Id}>
+        <div 
+        if:true={eachcase.first}>=================================================</div>
+        {eachcase.index} || {eachcase.value.Subject} || 
+        {eachcase.value.CaseNumber} || {eachcase.value.Origin}
+        <div 
+        if:true={eachcase.last}>****************************************************</div>
+        </li>
+        </template>-->
+
+        <!--<template for:each={allCases} for:item="eachCase" 
+        for:index="index">
+        <p key={eachCase.Id}>{index} || {eachCase.Subject} || 
+        {eachCase.CaseNumber} || {eachCase.Origin}</p>
+        </template>-->
+
+        <lightning-input label="Enter Subject" type="text" onchange={handleSubjectChange}></lightning-input>
+        <template for:each={casesWithSubjectEntered} for:item="eachCase"
+        for:index="index">
+        <p key={eachCase.Id}>{index} || {eachCase.Subject} || 
+        {eachCase.CaseNumber} || {eachCase.Origin}</p>
+        </template>
+        </lightning-card>
+</template>

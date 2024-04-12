@@ -1,0 +1,14 @@
+<template>
+    <lightning-card variant="Narrow" title="parent component" icon-name="standard:account">
+        <p>inside parent component</p>
+        =========================================================================
+        <c-api-child-decorator message="Message Passed From Parent" pageno="1" track-prop="Track Property Example" onpassdata={handleEventCall}></c-api-child-decorator>
+        ============================================================================
+        <p> after child is loaded</p>
+        <lightning-button variant="brand" label="invoke parent to child method" title="it will pass data from parent to child" onclick={handleClick}></lightning-button>
+    <p>name Data  received :{dataReceivedFromChild}</p>
+    <p>Addressed data recieved:{address}</p>
+    <p>Phone Data Received:{phone}</p>
+    <p>city data received:{city}</p>
+    </lightning-card>
+</template> 

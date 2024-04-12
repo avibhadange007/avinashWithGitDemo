@@ -1,0 +1,13 @@
+<template>
+    <lightning-card variant="Narrow" title="Life Cycle Hook" iconname="standard:account">
+        <p>Inside Parent Component</p>
+        ===================================================
+        <template if:true={showHideChildComp}>
+        <c-child-l-h-c-nov></c-child-l-h-c-nov>
+        </template>
+        ===================================================
+        <p>After Child is Loaded Successfully</p>
+        <lightning-button variant="brand" label="Show Hide Child"
+        title="titleName" onclick={handleClick}></lightning-button>
+        </lightning-card>
+</template>

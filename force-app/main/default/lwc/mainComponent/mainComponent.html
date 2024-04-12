@@ -1,0 +1,15 @@
+<!-- mainComponent.html -->
+<template>
+    <div>
+        <lightning-button onclick={navigateToLoginPage} label="Login"></lightning-button>
+        <lightning-button onclick={navigateToSignupPage} label="Signup"></lightning-button>
+
+        <!-- Render the current page based on the state -->
+        <template if:true={showLoginPage}>
+            <c-login-page></c-login-page>
+        </template>
+        <template if:true={showSignupPage}>
+            <c-sign-up-page></c-sign-up-page>
+        </template>
+    </div>
+</template>

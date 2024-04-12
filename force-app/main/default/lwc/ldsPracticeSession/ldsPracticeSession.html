@@ -1,0 +1,37 @@
+<template>
+    <lightning-card  variant="Narrow"  title="new record created using lds" icon-name="standard:account">
+    <!--<lightning-record-form
+      columns="3"
+      layout-type="Full"
+      object-api-name={objectApiName}
+      record-id={recordId}
+      fields={fields}
+      onsubmit={handleSubmit}
+      onsuccess={handleSuccess}
+    ></lightning-record-form>-->
+
+    <!--<lightning-record-view-form
+          record-id={recordId}
+          object-api-name={objectApiName}>
+      <div class="slds-box slds-theme_default">
+        <lightning-output-field field-name="Name"></lightning-output-field>
+        <lightning-output-field field-name="Active__c"></lightning-output-field>
+        <lightning-output-field field-name="Website"></lightning-output-field>
+        <lightning-output-field field-name="Industry"></lightning-output-field>
+        <lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
+      </div>
+    </lightning-record-view-form>-->
+
+    <lightning-record-edit-form
+        
+          object-api-name={objectApiName} 
+      ><lightning-input-field field-name="Name"></lightning-input-field>
+      <lightning-input-field field-name="Industry"></lightning-input-field>
+      <lightning-input-field field-name="AnnualRevenue"></lightning-input-field>
+      <lightning-input-field field-name="Website"></lightning-input-field>
+
+      <lightning-button type="submit" label="submit Record" variant="brand"></lightning-button>
+    </lightning-record-edit-form>
+ 
+</lightning-card>
+</template>

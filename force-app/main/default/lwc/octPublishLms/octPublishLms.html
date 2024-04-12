@@ -1,0 +1,14 @@
+<template>
+    <lightning-card  title="Publish LMS" icon-name="standard:account" >
+      <lightning-input 
+        type="text"
+        label="Enter Some Text" placeholder="type here..."
+        onchange={handleEventChange}
+      ></lightning-input>
+        <lightning-button 
+        variant="brand"
+        label="Publish Data"
+        onclick={handleClick}
+      ></lightning-button>
+    </lightning-card>
+</template>

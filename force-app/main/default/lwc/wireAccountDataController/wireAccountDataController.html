@@ -1,0 +1,9 @@
+<template>
+    <lightning-card  variant="Narrow"  title="wire Decorator" icon-name="standard:account">
+       <lightning-input type="text" variant="standard" name="name" label="enter website" onchange={handleWebsiteChange} ></lightning-input>
+    <template for:each={accountWithWebsiteEntered} for:item="eachAccount">
+        <p key={eachAccount.Id}>{AccountName}|| {eachAccount.Industry}
+            ||{eachAccount.Website}||{eachAccount.AnnualRevenue}||</p>
+       </template>
+    </lightning-card>
+</template>

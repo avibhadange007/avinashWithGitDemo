@@ -1,0 +1,18 @@
+<template>
+<lightning-card icon-name="standard:account" variant="base">
+<p>inside the parent components</p>
+=========================================
+<c-sep-api-decorator-child message="data is passed from parent to child" pageno="2" track-prop="this is track property" onpassdata={handleEventCall}></c-sep-api-decorator-child>
+******************************************
+<p>after child is loaded</p>
+<lightning-button 
+  variant="brand"
+  label="invoke parent data" 
+  onclick={handleClick}
+></lightning-button>
+<p>data Recived from child is:{dataRecivedFromChild}</p>
+<p> City is :{city}</p>
+<p>Mobile no is :{mobileno}</p>
+<p>Address is :{address}</p>
+</lightning-card>
+</template>
